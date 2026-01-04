@@ -19,5 +19,9 @@ The solution consists of two scripts:
 4. The script will create a temporary task, run the cleanup, and then delete the task.
 5. Check the `cleanup_log.txt` file for the results.
 
-## Warning
 This script purges **ALL** cached device associations in the DAF store. Windows will re-create associations for currently connected active devices, but you may need to re-pair some devices if they disappear completely.
+
+## Related Tools
+This specific fix addresses the "Device Association Framework" (DAF) cache (`HKLM\...\DeviceAssociationService\...\Store`). If you are still facing issues, or want a more general Bluetooth cleanup, check out these projects:
+
+*   **[m-a-x-s-e-e-l-i-g/powerBTremover](https://github.com/m-a-x-s-e-e-l-i-g/powerBTremover)**: Uses Windows APIs to remove stubborn Bluetooth devices.
