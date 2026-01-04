@@ -1,6 +1,6 @@
 # BluetoothDeviceCacheFix
 
-While working on my galaxybookenabler repo, i came into an issue where my earbuds were duplicated in windows, after a warranty repair and was always duplicated in Samsung Settings. This was to fix that.
+While working on my [galaxybookenabler](https://github.com/Bananz0/GalaxyBookEnabler) repo, i came into an issue where my earbuds were duplicated in windows, after a warranty repair and was always duplicated in Samsung Settings. This was to fix that.
 
 ## Description
 This tool purges the hidden "Device Association Framework" (DAF) cache in the Windows Registry (`HKLM\SYSTEM\ControlSet001\Services\DeviceAssociationService\State\Store`). This cache can hold onto stale device associations ("ghost devices") that are no longer present in the standard Plug and Play list or Windows Settings, but still appear in apps using WindowsRT Bluetooth APIs.
